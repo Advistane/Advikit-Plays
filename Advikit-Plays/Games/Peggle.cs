@@ -30,14 +30,9 @@ namespace Advikit_Plays.Games {
 
 				this.cws = cws;
 				log("Loaded commands: " + String.Join(", ", chatCommands.Keys.ToArray()));
-				for (int i = 5; i > 0; i--) {
-					//System.Threading.Thread.Sleep(1000);
-					log("Starting in " + i.ToString() + " seconds.");
-				}
 				log("Chat commands are active.");
 				this.cws.NewMessage += HandleMessage;
 			}
-
 		}
 
 		public void MoveLittleLeft() {
@@ -57,9 +52,7 @@ namespace Advikit_Plays.Games {
 		}
 
 		public void Shoot() {
-			//if (rnd.Next(1, 5) == 3) {
 			LeftClick();
-			//}
 		}
 
 		public void MoveUp() {

@@ -65,5 +65,12 @@ namespace Advikit_Plays.Controller {
             }
             input.SendLeftClick();
         }
+
+        protected void RightClick() {
+            if (target == null) {
+                return;
+            }
+            input.SendRightClick();
+        }
     }
 }
